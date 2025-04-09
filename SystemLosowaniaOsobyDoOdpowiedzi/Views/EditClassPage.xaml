@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowaniaOsobyDoOdpowiedzi.Views.EditClassPage"
+             Title="Edytuj klasę">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Styles/styles.css" />
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="Edytuj klasę" StyleClass="title-bar" />
+        <Entry x:Name="ClassNameEntry" Placeholder="Nazwa klasy" />
+        <ListView x:Name="StudentsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal">
+                            <Entry Text="{Binding Name}" VerticalOptions="Center" />
+                            <Button Text="Usuń" Clicked="OnDeleteButtonClicked" StyleClass="button-secondary" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Button Text="Dodaj ucznia" Clicked="OnAddStudentButtonClicked" StyleClass="button-primary" />
+        <Button Text="Zapisz klasę" Clicked="OnSaveButtonClicked" StyleClass="button-primary" />
+    </StackLayout>
+</ContentPage>

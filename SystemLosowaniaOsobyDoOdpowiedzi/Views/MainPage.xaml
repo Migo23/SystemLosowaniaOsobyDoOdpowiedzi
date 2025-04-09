@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SystemLosowaniaOsobyDoOdpowiedzi.Views.MainPage"
+             Title="System Losowania">
+    <ContentPage.Resources>
+        <StyleSheet Source="/Styles/styles.css" />
+    </ContentPage.Resources>
+    <StackLayout>
+        <Label Text="System Losowania Osoby do Odpowiedzi" StyleClass="title-bar" />
+        <Picker x:Name="ClassPicker" Title="Wybierz klasę" />
+        <Button Text="Wylosuj osobę" Clicked="OnDrawButtonClicked" StyleClass="button-primary" />
+        <Button Text="Podgląd klasy" Clicked="OnViewClassButtonClicked" StyleClass="button-primary" />
+        <Button Text="Edytuj klasę" Clicked="OnEditButtonClicked" StyleClass="button-secondary" />
+        <Button Text="Dodaj klasę" Clicked="OnAddClassButtonClicked" StyleClass="button-primary" />
+        <Label x:Name="ResultLabel" StyleClass="label-result" />
+        <Label x:Name="LuckyNumberLabel" StyleClass="label-lucky-number" />
+    </StackLayout>
+</ContentPage>

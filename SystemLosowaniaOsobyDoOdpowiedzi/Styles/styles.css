@@ -1,0 +1,39 @@
+.title-bar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10;
+    text-align: center;
+    font-size: 24;
+    font-weight: bold;
+}
+
+.button-primary {
+    background-color: #008CBA;
+    color: white;
+    padding: 10;
+    border-radius: 5;
+    margin: 5;
+}
+
+.button-secondary {
+    background-color: #f44336;
+    color: white;
+    padding: 10;
+    border-radius: 5;
+    margin: 5;
+}
+
+.label-result {
+    font-size: 20;
+    font-weight: bold;
+    color: #fff;
+    margin: 10;
+    text-align: center;
+}
+
+.label-lucky-number {
+    font-size: 18;
+    color: #4CAF50;
+    margin: 10;
+    text-align: center;
+}
